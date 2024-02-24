@@ -32,7 +32,7 @@
 
             <!-- Four Links -->
             <div
-                class="nav-links duration-500 md:static absolute bg-[#EEEFF1] md:bg-transparent md:min-h-fit min-h-[40vh] left-[-100%] top-[12%]  md:w-auto  w-full flex items-center px-5">
+                class="nav-links duration-500 md:static absolute bg-[#EEEFF1] md:bg-transparent md:min-h-fit min-h-[40vh] left-[-100%] top-[14%]  md:w-auto  w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
                         <a href="#" class="font-medium text-black">Home</a>
@@ -51,9 +51,10 @@
 
             <!-- Buttons -->
             <div class="flex items-center gap-6">
-                <a href="" class="mr-6 md:mb-1"><img src="images/cart_icon.png" width="34px"></a>
+                <a href="" class="mr-0 md:mr-2 lg:mr-4 xl:mr-6 md:mb-1"><img src="images/cart_icon.png"
+                        width="34px"></a>
                 <button
-                    class="login-button text-l md:text-xl font-medium border-2 border-[#8D909F] text-[#8D909F] px-5 md:px-6 py-1">LOG
+                    class="text-l md:text-xl font-medium border-2 border-[#8D909F] text-[#8D909F] px-5 md:px-6 py-1">LOG
                     IN</button>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
@@ -61,24 +62,33 @@
     </header>
 
     <!-- Hero Section  -->
-    <section class="min-h-screen flex items-center max-w-[92%] md:max-w-[90%] mx-auto">
+    <section class="mt-[16%] md:mt-[8%] flex items-center max-w-[92%] md:max-w-[90%] mx-auto">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:-mt-20">
 
             <!-- Left Col -->
             <div class="flex flex-col justify-center order-last mt-6 md:mt-0">
 
                 <!-- Texts -->
-                <h2 class="text-black opacity-75 font-semibold text-[40px] md:text-[40px] lg:text-[55px] xl:text-[70px] 2xl:text-[82px] leading-none text-left mb-[15px] md:mb-[40px] ">Choose Perfect Fashion For You</h2>
-                <p class="text-black opacity-75 font-semibold md:max-w-[679px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <h2
+                    class="text-black opacity-75 font-semibold text-[40px] md:text-[40px] lg:text-[55px] xl:text-[70px] 2xl:text-[82px] leading-none text-left mb-[15px] md:mb-[40px] ">
+                    Choose Perfect Fashion For You</h2>
+                <p class="text-black opacity-75 font-semibold md:max-w-[679px]">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua</p>
 
                 <!-- Buttons -->
                 <div class="flex gap-4 lg:gap-0 lg:flex-row lg:items-center mt-6 md:mt-8">
-                    <button class="bg-[#8B8E9D] text-white py-2 md:py-0 w-1/2 md:w-5/12 md:px-auto md:h-[60px] lg:h-[66px] shadow-lg md:text-[18px] lg:text-[20px] xl:text-[22px] font-semibold rounded">Explore Now</button>
+                    <button
+                        class="bg-[#8B8E9D] text-white py-2 md:py-0 w-1/2 md:w-5/12 md:px-auto md:h-[60px] lg:h-[66px] shadow-lg md:text-[18px] lg:text-[20px] xl:text-[22px] font-semibold rounded">Explore
+                        Now</button>
                     <div class="flex items-center md:ml-[8px] lg:ml-[20px] xl:ml-[50px] 2xl:ml-[80px]">
-                        <a href="#"><img class="w-8 md:w-10 lg:w-16 xl:w-18 2xl:w-auto mr-3 md:mr-0" src="./images/hero_play_button.png" alt=""></a>
-                        <div class="md:w-[15px] lg:w-[35px] xl:w-[40px] border border-[#8D909F] mx-[10px] hidden md:inline"></div>
-                        <p class="text-[#8D909F] font-semibold md:text-[12px] lg:text-[15px] xl:text-[18px]"><a href="#">Live Demo...</a></p>
+                        <a href="#"><img class="w-8 md:w-10 lg:w-16 xl:w-18 2xl:w-auto mr-3 md:mr-0"
+                                src="./images/hero_play_button.png" alt=""></a>
+                        <div
+                            class="md:w-[15px] lg:w-[35px] xl:w-[40px] border border-[#8D909F] mx-[10px] hidden md:inline">
+                        </div>
+                        <p class="text-[#8D909F] font-semibold md:text-[12px] lg:text-[15px] xl:text-[18px]"><a
+                                href="#">Live Demo...</a></p>
                     </div>
                 </div>
             </div>
@@ -86,7 +96,7 @@
             <!-- Right Col -->
             <div class="flex md:mb-[150px] items-center md:order-last -mt-28 md:mt-0">
                 <img class=" md:ml-[10%] lg:ml-[8%] xl:ml-[5%]" src="images/hero_image2.png" alt="" width="800px">
-            </div> 
+            </div>
         </div>
     </section>
 
@@ -98,14 +108,44 @@
             </div>
             <div><img src="./images/brand_logos/vogue.png" alt=""></div>
             <div><img src="./images/brand_logos/gucci.png" alt=""></div>
-            <div><img  src="./images/brand_logos/fashion_night_club.png" alt=""></div>
+            <div><img src="./images/brand_logos/fashion_night_club.png" alt=""></div>
         </div>
     </section>
 
-    <section class="w-full h-[208px] bg-gray-100 ">
+    <!-- Still Classic Section -->
+    <section class="flex items-center max-w-[92%] md:max-w-[90%] mx-auto pt-20 pb-16  md:pt-[150px] md:pb-[130px] lg:pt-[225px] lg:pb-[200px] xl:pt-[300px] xl:pb-[275px]">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:-mt-20">
 
+            <!-- Left Col -->
+            <div class="flex flex-col justify-center item order-last mt-10">
+
+                <!-- Content -->
+                <div class="max-w-[646px]">
+                    <h2
+                    class="text-black opacity-75 font-light text-[40px] md:text-[40px] lg:text-[55px] xl:text-[70px] 2xl:text-[82px] leading-none text-left mb-[15px] md:mb-[30px] lg:mb-[35px] xl:mb-[35px]">
+                    Still Classic With Modern Style</h2>
+
+                <p class="text-black opacity-75 font-medium mb-[22px] md:mb-[35px] lg:mb-[45px] xl:mb-[50px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+
+                <button
+                    class="bg-[#EEEFF1] text-black/75 py-2 md:py-0 w-2/5 md:w-5/12 md:px-auto md:h-[60px] lg:h-[66px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-medium border-[3px] border-[#000000]/75 rounded">Shop
+                    Now</button>
+                </div>
+
+            </div>
+
+            <!-- Right Col -->
+            <div class="md:order-last">
+                <div class="md:ml-10">
+                    <img class="inline" src="images/3images.png" alt="" width="721px">
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Products Section -->
+    <section class="h-[300px] bg-red-200">
+    </section>
     <!-- Script for toggling mobile navigation menu -->
     <script>
         const navLinks = document.querySelector('.nav-links')
@@ -117,5 +157,4 @@
 </body>
 
 </html>
-
 
