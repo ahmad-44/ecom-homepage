@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="new.css"> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Fonts End -->
+
+    <!-- icnons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- icnons end -->
+
+    <title>Fashion</title>
+</head>
+
+<body class="font-[Poppins] bg-[#EEEFF1] h-screen">
+    <header class="bg-transparent mt-[44px]">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <p class="font-extrabold text-5xl md:text-6xl">FS.</p>
+            </div>
+
+            <!-- Four Links -->
+            <div
+                class="nav-links duration-500 md:static absolute bg-[#EEEFF1] md:bg-transparent md:min-h-fit min-h-[40vh] left-[-100%] top-[12%]  md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a href="#" class="font-medium text-black">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-medium text-black">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-medium text-black">Feature</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-medium text-black">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex items-center gap-6">
+                <a href="" class="mr-6 md:mb-1"><img src="images/cart_icon.png" width="34px"></a>
+                <button
+                    class="login-button text-l md:text-xl font-medium border-2 border-[#8D909F] text-[#8D909F] px-5 md:px-6 py-1">LOG
+                    IN</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section  -->
+    <section class="min-h-screen flex items-center max-w-[92%] md:max-w-[90%] mx-auto">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:-mt-20">
+
+            <!-- Left Col -->
+            <div class="flex flex-col justify-center order-last mt-6 md:mt-0">
+
+                <!-- Texts -->
+                <h2 class="text-black opacity-75 font-semibold text-[40px] md:text-[40px] lg:text-[55px] xl:text-[70px] 2xl:text-[82px] leading-none text-left mb-[15px] md:mb-[40px] ">Choose Perfect Fashion For You</h2>
+                <p class="text-black opacity-75 font-semibold md:max-w-[679px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua</p>
+
+                <!-- Buttons -->
+                <div class="flex gap-4 lg:gap-0 lg:flex-row lg:items-center mt-6 md:mt-8">
+                    <button class="bg-[#8B8E9D] text-white py-2 md:py-0 w-1/2 md:w-5/12 md:px-auto md:h-[60px] lg:h-[66px] shadow-lg md:text-[18px] lg:text-[20px] xl:text-[22px] font-semibold rounded">Explore Now</button>
+                    <div class="flex items-center md:ml-[8px] lg:ml-[20px] xl:ml-[50px] 2xl:ml-[80px]">
+                        <a href="#"><img class="w-8 md:w-10 lg:w-16 xl:w-18 2xl:w-auto mr-3 md:mr-0" src="./images/hero_play_button.png" alt=""></a>
+                        <div class="md:w-[15px] lg:w-[35px] xl:w-[40px] border border-[#8D909F] mx-[10px] hidden md:inline"></div>
+                        <p class="text-[#8D909F] font-semibold md:text-[12px] lg:text-[15px] xl:text-[18px]"><a href="#">Live Demo...</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Col -->
+            <div class="flex md:mb-[150px] items-center md:order-last -mt-28 md:mt-0">
+                <img class=" md:ml-[10%] lg:ml-[8%] xl:ml-[5%]" src="images/hero_image2.png" alt="" width="800px">
+            </div> 
+        </div>
+    </section>
+
+    <!-- Brand Logos Seciton -->
+    <section class="w-full mt-12 md:mt-0 lg:h-[208px] md:h-[190px] bg-white flex items-center relative">
+        <div class="w-full flex justify-between items-center max-w-[90%]  mx-auto gap-4 lg:gap-8 xl:gap-12 2xl:gap-16">
+            <div>
+                <img src="./images/brand_logos/zara.png" alt="">
+            </div>
+            <div><img src="./images/brand_logos/vogue.png" alt=""></div>
+            <div><img src="./images/brand_logos/gucci.png" alt=""></div>
+            <div><img  src="./images/brand_logos/fashion_night_club.png" alt=""></div>
+        </div>
+    </section>
+
+    <section class="w-full h-[208px] bg-gray-100 ">
+
+    </section>
+
+    <!-- Script for toggling mobile navigation menu -->
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('left-[0]')
+        }
+    </script>
+</body>
+
+</html>
+
+
