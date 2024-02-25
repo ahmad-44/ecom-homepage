@@ -35,16 +35,16 @@
                 class="nav-links duration-500 md:static absolute bg-[#EEEFF1] md:bg-transparent md:min-h-fit min-h-[40vh] left-[-100%] top-[14%]  md:w-auto  w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
-                        <a href="#" class="font-medium text-black">Home</a>
+                        <a href="#" class="font-medium text-black hover:text-gray-600">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="font-medium text-black">Shop</a>
+                        <a href="#" class="font-medium text-black hover:text-gray-600">Shop</a>
                     </li>
                     <li>
-                        <a href="#" class="font-medium text-black">Feature</a>
+                        <a href="#" class="font-medium text-black hover:text-gray-600">Feature</a>
                     </li>
                     <li>
-                        <a href="#" class="font-medium text-black">Contact</a>
+                        <a href="#" class="font-medium text-black hover:text-gray-600">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +54,7 @@
                 <a href="" class="mr-0 md:mr-2 lg:mr-4 xl:mr-6 md:mb-1"><img src="images/cart_icon.png"
                         width="34px"></a>
                 <button
-                    class="text-l md:text-xl font-medium border-2 border-[#8D909F] text-[#8D909F] px-5 md:px-6 py-1">LOG
+                    class="text-l md:text-xl font-medium border-2 border-[#8D909F] text-[#8D909F] hover:text-[#EEEFF1] hover:bg-[#8D909F] px-5 md:px-6 py-1">LOG
                     IN</button>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
@@ -79,7 +79,7 @@
                 <!-- Buttons -->
                 <div class="flex gap-4 lg:gap-0 lg:flex-row lg:items-center mt-6 md:mt-8">
                     <button
-                        class="bg-[#8B8E9D] text-white py-2 md:py-0 w-1/2 md:w-5/12 md:px-auto md:h-[60px] lg:h-[66px] shadow-lg md:text-[18px] lg:text-[20px] xl:text-[22px] font-semibold rounded">Explore
+                        class="bg-[#8B8E9D] text-white py-2 md:py-0 w-1/2 md:w-5/12 md:px-auto md:h-[60px] lg:h-[66px] shadow-lg md:text-[18px] lg:text-[20px] xl:text-[22px] font-semibold rounded hover:bg-gray-600">Explore
                         Now</button>
                     <div class="flex items-center md:ml-[8px] lg:ml-[20px] xl:ml-[50px] 2xl:ml-[80px]">
                         <a href="#"><img class="w-8 md:w-10 lg:w-16 xl:w-18 2xl:w-auto mr-3 md:mr-0"
@@ -128,7 +128,7 @@
                         ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
 
                     <button
-                        class="bg-[#EEEFF1] text-black/75 py-2 md:py-0 w-2/5 md:w-5/12 md:px-auto md:h-[60px] lg:h-[66px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-medium border-[3px] border-[#000000]/75 rounded">Shop
+                        class="bg-[#EEEFF1] text-black/75 hover:bg-black/75 hover:text-[#EEEFF1] py-2 md:py-0 w-2/5 md:w-5/12 md:px-auto md:h-[60px] lg:h-[66px] md:text-[18px] lg:text-[20px] xl:text-[22px] font-medium border-[3px] border-[#000000]/75 rounded">Shop
                         Now</button>
                 </div>
 
@@ -151,12 +151,17 @@
                 <h2 class="font-medium text-black/75 text-[24px] sm:text-[36px] md:text-[44px] lg:text-[50px]">Our
                     Products</h2>
                 <ul class="flex gap-3 sm:gap-12 mt-[20px] sm:mt-[30px] md:mt-[50px] lg:mt-[70px] xl:mt-[100px]">
-                    <li class="text-[14px] sm:text-[22px] md:text-[28px] font-medium text-black/65">SALE</li>
+                    <li class="text-[14px] sm:text-[22px] md:text-[28px] font-medium text-black/65 hover:text-black"><a
+                            href="#">SALE</a>
+                    </li>
                     <li
-                        class="text-[14px] sm:text-[22px] md:text-[28px] font-medium text-black/65 border-b-[4px] border-[#8D909F]">
-                        HOT</li>
-                    <li class="text-[14px] sm:text-[22px] md:text-[28px] font-medium text-black/65">NEW ARRIVALS</li>
-                    <li class="text-[14px] sm:text-[22px] md:text-[28px] font-medium text-black/65">ACCESSORIES</li>
+                        class="text-[14px] sm:text-[22px] md:text-[28px] font-medium text-black/65 border-b-[4px] border-[#8D909F] hover:text-black">
+                        <a href="#"></a>HOT
+                    </li>
+                    <li class="text-[14px] sm:text-[22px] md:text-[28px] font-medium text-black/65 hover:text-black"><a
+                            href="#">NEW ARRIVALS</a></li>
+                    <li class="text-[14px] sm:text-[22px] md:text-[28px] font-medium text-black/65 hover:text-black"><a
+                            href="#">ACCESSORIES</a></li>
                 </ul>
             </div>
 
@@ -164,100 +169,112 @@
             <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[30px] md:mt-[60px] xl:mt-[90px] gap-4 sm:gap-6 md:gap-8 lg:gap-10">
                 <!-- Product 1 -->
-                <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
-                    <div>
-                        <img src="./images/products/1.png" alt="">
-                    </div>
-                    <h3 class="font-medium text-[22px] md:text-[22px] text-black">Winter Wear Full Sleeve</h3>
-                    <div class="flex justify-center gap-8">
-                        <p class="text-[20px] md:text-[24px]">Rs. 999</p>
-                        <div class="border-l-2 border-black/50"></div>
-                        <div class="flex gap-3">
-                            <p class="text-[20px] md:text-[24px]">4.1</p><ion-icon
-                                class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                <a href="">
+                    <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
+                        <div>
+                            <img src="./images/products/1.png" alt="">
+                        </div>
+                        <h3 class="font-medium text-[22px] md:text-[22px] text-black">Winter Wear Full Sleeve</h3>
+                        <div class="flex justify-center gap-8">
+                            <p class="text-[20px] md:text-[24px]">Rs. 999</p>
+                            <div class="border-l-2 border-black/50"></div>
+                            <div class="flex gap-3">
+                                <p class="text-[20px] md:text-[24px]">4.1</p><ion-icon
+                                    class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Product 2 -->
-                <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
-                    <div>
-                        <img src="./images/products/2.png" alt="">
-                    </div>
-                    <h3 class="font-medium text-[22px] md:text-[22px] text-black">IRIZA Women Co Ord Set</h3>
-                    <div class="flex justify-center gap-8">
-                        <p class="text-[20px] md:text-[24px]">Rs. 789</p>
-                        <div class="border-l-2 border-black/50"></div>
-                        <div class="flex gap-3">
-                            <p class="text-[20px] md:text-[24px]">3.9</p><ion-icon
-                                class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                <a href="">
+                    <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
+                        <div>
+                            <img src="./images/products/2.png" alt="">
+                        </div>
+                        <h3 class="font-medium text-[22px] md:text-[22px] text-black">IRIZA Women Co Ord Set</h3>
+                        <div class="flex justify-center gap-8">
+                            <p class="text-[20px] md:text-[24px]">Rs. 789</p>
+                            <div class="border-l-2 border-black/50"></div>
+                            <div class="flex gap-3">
+                                <p class="text-[20px] md:text-[24px]">3.9</p><ion-icon
+                                    class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Product 3 -->
-                <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
-                    <div>
-                        <img src="./images/products/3.png" alt="">
-                    </div>
-                    <h3 class="font-medium text-[22px] md:text-[22px] text-black">Winter Wear Full Sleeve</h3>
-                    <div class="flex justify-center gap-8">
-                        <p class="text-[20px] md:text-[24px]">Rs. 599</p>
-                        <div class="border-l-2 border-black/50"></div>
-                        <div class="flex gap-3">
-                            <p class="text-[20px] md:text-[24px]">4.2</p><ion-icon
-                                class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                <a href="#">
+                    <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
+                        <div>
+                            <img src="./images/products/3.png" alt="">
+                        </div>
+                        <h3 class="font-medium text-[22px] md:text-[22px] text-black">Winter Wear Full Sleeve</h3>
+                        <div class="flex justify-center gap-8">
+                            <p class="text-[20px] md:text-[24px]">Rs. 599</p>
+                            <div class="border-l-2 border-black/50"></div>
+                            <div class="flex gap-3">
+                                <p class="text-[20px] md:text-[24px]">4.2</p><ion-icon
+                                    class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Product 4 -->
-                <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
-                    <div>
-                        <img src="./images/products/4.png" alt="">
-                    </div>
-                    <h3 class="font-medium text-[22px] md:text-[22px] text-black">Dream of Glory Inc. Men's</h3>
-                    <div class="flex justify-center gap-8">
-                        <p class="text-[20px] md:text-[24px]">Rs. 689</p>
-                        <div class="border-l-2 border-black/50"></div>
-                        <div class="flex gap-3">
-                            <p class="text-[20px] md:text-[24px]">4.1</p><ion-icon
-                                class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                <a href="#">
+                    <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
+                        <div>
+                            <img src="./images/products/4.png" alt="">
+                        </div>
+                        <h3 class="font-medium text-[22px] md:text-[22px] text-black">Dream of Glory Inc. Men's</h3>
+                        <div class="flex justify-center gap-8">
+                            <p class="text-[20px] md:text-[24px]">Rs. 689</p>
+                            <div class="border-l-2 border-black/50"></div>
+                            <div class="flex gap-3">
+                                <p class="text-[20px] md:text-[24px]">4.1</p><ion-icon
+                                    class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Product 5 -->
-                <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
-                    <div>
-                        <img src="./images/products/5.png" alt="">
-                    </div>
-                    <h3 class="font-medium text-[22px] md:text-[22px] text-black">Camouflage Full Sleeve</h3>
-                    <div class="flex justify-center gap-8">
-                        <p class="text-[20px] md:text-[24px]">Rs. 559</p>
-                        <div class="border-l-2 border-black/50"></div>
-                        <div class="flex gap-3">
-                            <p class="text-[20px] md:text-[24px]">4.5</p><ion-icon
-                                class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                <a href="#">
+                    <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
+                        <div>
+                            <img src="./images/products/5.png" alt="">
+                        </div>
+                        <h3 class="font-medium text-[22px] md:text-[22px] text-black">Camouflage Full Sleeve</h3>
+                        <div class="flex justify-center gap-8">
+                            <p class="text-[20px] md:text-[24px]">Rs. 559</p>
+                            <div class="border-l-2 border-black/50"></div>
+                            <div class="flex gap-3">
+                                <p class="text-[20px] md:text-[24px]">4.5</p><ion-icon
+                                    class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Product 6 -->
-                <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
-                    <div>
-                        <img src="./images/products/6.png" alt="">
-                    </div>
-                    <h3 class="font-medium text-[22px] md:text-[22px] text-black">Night Full Out Fit</h3>
-                    <div class="flex justify-center gap-8">
-                        <p class="text-[20px] md:text-[24px]">Rs. 999</p>
-                        <div class="border-l-2 border-black/50"></div>
-                        <div class="flex gap-3">
-                            <p class="text-[20px] md:text-[24px]">4.8</p><ion-icon
-                                class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                <a href="#">
+                    <div class="flex flex-col items-center justify-center gap-4 md:gap-6 mt-10">
+                        <div>
+                            <img src="./images/products/6.png" alt="">
+                        </div>
+                        <h3 class="font-medium text-[22px] md:text-[22px] text-black">Night Full Out Fit</h3>
+                        <div class="flex justify-center gap-8">
+                            <p class="text-[20px] md:text-[24px]">Rs. 999</p>
+                            <div class="border-l-2 border-black/50"></div>
+                            <div class="flex gap-3">
+                                <p class="text-[20px] md:text-[24px]">4.8</p><ion-icon
+                                    class="text-yellow-400 text-[26px] md:text-[30px]" name="star"></ion-icon>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -284,25 +301,25 @@
                             magna aliqua.</p>
 
                         <!-- Timer -->
-                        <div class="flex gap-10">
+                        <div class="flex gap-6 md:gap-10">
                             <div
-                                class="w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-white flex flex-col justify-center items-center rounded-lg">
+                                class="w-[60px] h-[60px] md:w-[72px] md:h-[72px] lg:w-[88px] lg:h-[88px] bg-white flex flex-col justify-center items-center rounded-lg">
                                 <p class="text-[22px] lg:text-[28px] mb-0">06</p>
                                 <p class="text-[15px] -mt-3">Days</p>
                             </div>
                             <div
-                                class="w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-white flex flex-col justify-center items-center rounded-lg">
+                                class="w-[60px] h-[60px] md:w-[72px] md:h-[72px] lg:w-[88px] lg:h-[88px] bg-white flex flex-col justify-center items-center rounded-lg">
                                 <p class="text-[22px] lg:text-[28px] mb-0">18</p>
                                 <p class="text-[15px] -mt-3">Hours</p>
                             </div>
                             <div
-                                class="w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-white flex flex-col justify-center items-center rounded-lg">
+                                class="w-[60px] h-[60px] md:w-[72px] md:h-[72px] lg:w-[88px] lg:h-[88px] bg-white flex flex-col justify-center items-center rounded-lg">
                                 <p class="text-[22px] lg:text-[28px] mb-0">48</p>
                                 <p class="text-[15px] -mt-3">Mins</p>
                             </div>
                         </div>
                         <button
-                            class="font-medium text-[22px] lg:text-[28px] bg-white px-4 py-3 lg:px-10 lg:py-5 max-w-[200px] lg:max-w-[248px] rounded-md">Buy
+                            class="font-medium text-[22px] lg:text-[28px] bg-white px-4 py-3 lg:px-10 lg:py-5 max-w-[200px] lg:max-w-[248px] rounded-md hover:text-white hover:bg-transparent hover:border-white hover:border-2 border-2 border-white">Buy
                             Now</button>
                     </div>
                 </div>
@@ -311,7 +328,7 @@
     </section>
 
     <!-- Feedback slider -->
-    <section class="max-w-[92%] md:max-w-[90%] mx-auto my-[80px] md:my-[200px]">
+    <section class="max-w-[92%] md:max-w-[90%] mx-auto my-[80px] md:my-[170px]">
         <!-- Heading text -->
         <div class="flex flex-col justify-center items-center gap-3 lg:gap-3">
             <h3 class="font-semibold text-black/75 text-[30px] lg:text-[50px]">Feedback Corner</h3>
@@ -348,18 +365,99 @@
 
         <!-- Arrow Buttons -->
         <div class="mt-10 md:mt-15 lg:mt-20 flex justify-center gap-10 lg:gap-20">
-            <div class="bg-[#8D909F]/45 w-[56px] h-[56px] lg:w-[68px] lg:h-[68px] flex items-center justify-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-md">
-                <img src="./images/left_arrow.png" alt="">
-            </div> 
-            <div class="bg-[#8D909F]/75 w-[56px] h-[56px] lg:w-[68px] lg:h-[68px] flex items-center justify-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-md">
-                <img src="./images/right_arrow.png" alt="">
-            </div>
+            <a href="#">
+                <div
+                    class="bg-[#8D909F]/45 w-[56px] h-[56px] lg:w-[68px] lg:h-[68px] flex items-center justify-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-md">
+                    <img src="./images/left_arrow.png" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <div
+                    class="bg-[#8D909F]/75 w-[56px] h-[56px] lg:w-[68px] lg:h-[68px] flex items-center justify-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-md">
+                    <img src="./images/right_arrow.png" alt="">
+                </div>
+            </a>
         </div>
     </section>
 
-    <!-- Dummy Section -->
-    <section class="h-[300px] bg-red-200">
-    </section>
+    <!-- Footer-->
+    <footer class="bg-[#8B8E9D] h-max md:h-[800px] lg:h-[503px] pt-[50px] pb-[80px]">
+        <!-- Links Container -->
+        <div class="grid md:grid-cols-1 lg:grid-cols-5 max-w-[92%] md:max-w-[90%] mx-auto h-full">
+            <!-- Links -->
+            <div class="col-span-1 lg:col-span-3">
+                <div class="grid grid-col-1 md:grid-cols-3">
+
+                    <!-- Links Col 1 -->
+                    <div class="flex gap-3 flex-col items-center lg:items-start">
+                        <p class="font-extrabold text-[75px] text-white mb-3">FS.</p>
+                        <p class="font-medium text-[28px] text-white">Social Media</p>
+                        <ul class="flex gap-14">
+                            <li class="text-white text-[24px] font-bold"><a href="#">FB</a></li>
+                            <li class="text-white text-[24px] font-bold"><a href="#">LI</a></li>
+                            <li class="text-white text-[24px] font-bold"><a href="#">IN</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Links Col 2 -->
+                    <div
+                        class="flex gap-3 flex-col mt-10 md:mt-0 items-center md:items-start md:ml-10 lg:ml-8 2xl:ml-0">
+                        <p class="font-semibold text-[34px] text-white mb-3 mt-4">SHOP</p>
+                        <ul class="flex flex-col gap-5">
+                            <li class="font-medium text-[28px] text-white text-center md:text-left"><a
+                                    href="#">Product</a></li>
+                            <li class="font-medium text-[28px] text-white text-center md:text-left"><a
+                                    href="#">Overview</a></li>
+                            <li class="font-medium text-[28px] text-white text-center md:text-left"><a
+                                    href="#">Pricing</a></li>
+                            <li class="font-medium text-[28px] text-white text-center md:text-left"><a
+                                    href="#">Releases</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Links Col 3 -->
+                    <div class="flex gap-3 flex-col mt-12 md:mt-0 items-center md:items-start">
+                        <p class="font-semibold text-[34px] text-white mb-3 mt-4">COMPANY</p>
+                        <ul class="flex flex-col gap-5">
+                            <li class="font-medium text-[28px] text-white text-center md:text-left"><a href="#">About
+                                    Us</a></li>
+                            <li class="font-medium text-[28px] text-white text-center md:text-left"><a
+                                    href="#">Contact</a></li>
+                            <li class="font-medium text-[28px] text-white text-center md:text-left"><a href="#">New</a>
+                            </li>
+                            <li class="font-medium text-[28px] text-white text-center md:text-left"><a
+                                    href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="col-span-1 lg:col-span-2 lg:pl-8 2xl:pl-16 mt-10 md:mt-0">
+                <div class="flex gap-3 flex-col items-center lg:items-start text-center lg:text-left">
+                    <p class="font-semibold text-[34px] text-white mb-3 mt-4">STAY UP TO DATE</p>
+                    <form class="flex flex-col xl:flex-row justify-center items-center">
+                        <input
+                            class="placeholder:text-white text-white bg-transparent text-[20px] md:text-[24px] lg:text-[28px] border-white border-[3px] py-2 lg:pl-6 pl-8 xl:py-4 md:pl-12 w-full  xl:border-r-0 rounded-md xl:rounded-r-none"
+                            type="text" name="" id="" placeholder="Enter Your Email">
+                        <button
+                            class="font-medium text-[20px] xl:px-6 py-2 xl:py-4 lg:text-[26px] xl:text-[28px] text-[#8B8E9D] border-white border-[3px] bg-white w-[120px] md:w-[158px] xl:border-l-0 rounded-md xl:rounded-l-none mt-3 xl:mt-0 hover:text-white hover:bg-transparent hover:border-l-4">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Line -->
+        <div
+            class="max-w-[92%] md:max-w-[90%] flex flex-col lg:flex-row justify-center items-center lg:gap-10 mx-auto mt-8 md:-mt-8 lg:mt-0">
+            <div class="w-full bg-white/75 h-[3px]"></div>
+            <ul class="flex gap-4 mt-3 lg:mt-0">
+                <li class="font-medium text-[24px] text-white"><a href="#">Term</a></li>
+                <li class="font-medium text-[24px] text-white"><a href="#">Privacy</a></li>
+                <li class="font-medium text-[24px] text-white"><a href="#">Cookie</a></li>
+            </ul>
+        </div>
+    </footer>
     <!-- Script for toggling mobile navigation menu -->
     <script>
         const navLinks = document.querySelector('.nav-links')
